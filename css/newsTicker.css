@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+.NewsTicker{width:100%; height:40px; background:#FFF; position:relative; border:solid 2px #2096cd; overflow:hidden;}
+.NewsTicker>.newsticker-title{width:auto; height:40px; display:inline-block; background:#2096cd; position:relative;}
+.NewsTicker>.newsticker-title>h2{display:inline-block; margin:0; padding:0 20px; line-height:1em; font-size:1em; color:#FFF; height:40px; box-sizing:border-box;}
+.NewsTicker>.newsticker-title>span{width: 0;position:absolute;right:-10px;top:10px;height: 0;border-style: solid;border-width: 10px 0 10px 10px;border-color: transparent transparent transparent #2096cd;}
+
+.NewsTicker>ul{padding:0; margin:0; list-style:none; position:absolute; left:210px; top:0; right:40px; height:40px; font-size:1em;}
+.NewsTicker>ul>li{position:absolute; height:40px; width:100%; line-height:40px; display:none;}
+.NewsTicker>ul>li>a{text-decoration:none; color:#333; overflow:hidden; display:block; white-space: nowrap;text-overflow: ellipsis; font-weight:normal;}
+.NewsTicker>ul>li>a>span{color:#2096cd;}
+.NewsTicker>ul>li>a:hover{color:#2096cd;}
+
+.NewsTicker>.newsticker-navi{width:40px; height:40px; position:absolute; right:0; top:0; opacity:0;}
+.NewsTicker>.newsticker-navi>span{width:20px; height:40px; position:absolute; top:0; cursor:pointer; opacity:0.3; background-image:url(../img/newsticker-arrows.png); background-repeat:no-repeat;}
+.NewsTicker>.newsticker-navi>span:hover{opacity:1;}
+.NewsTicker>.newsticker-navi>span:first-child{background-position:left center; left:0;}
+.NewsTicker>.newsticker-navi>span:last-child{background-position:right center; right:0;}
+.NewsTicker:hover .newsticker-navi{opacity:1;}
+
+.newsticker-large{height:50px;}
+.newsticker-large>.newsticker-title{height:50px;}
+.newsticker-large>.newsticker-title>h2{line-height:50px; font-size:26px;}
+.newsticker-large>.newsticker-title>span{top:15px;}
+.newsticker-large>ul{height:50px; left:250px; font-size:20px;}
+.newsticker-large>ul>li{height:50px; line-height:50px;}
+.newsticker-large>.newsticker-navi{height:50px; }
+.newsticker-large>.newsticker-navi>span{height:50px;}
+
+.newsticker-small{height:30px;}
+.newsticker-small>.newsticker-title{height:30px;}
+.newsticker-small>.newsticker-title>h2{line-height:30px; font-size:18px;}
+.newsticker-small>.newsticker-title>span{top:5px;}
+.newsticker-small>ul{height:30px; left:200px; font-size:14px;}
+.newsticker-small>ul>li{height:30px; line-height:30px;}
+.newsticker-small>.newsticker-navi{height:30px; }
+.newsticker-small>.newsticker-navi>span{height:30px;}
+
+/*color styles -----------------------------*/
+.newsticker-red{border-color:#f44a56;}
+.newsticker-red>.newsticker-title{background:#f44a56;}
+.newsticker-red>.newsticker-title>span{border-left-color:#f44a56;}
+.newsticker-red>ul>li>a:hover,.newsticker-red>ul>li>a>span{color:#f44a56;}
+
+.newsticker-green{border-color:#27ae60;}
+.newsticker-green>.newsticker-title{background:#27ae60;}
+.newsticker-green>.newsticker-title>span{border-left-color:#27ae60;}
+.newsticker-green>ul>li>a:hover,.newsticker-green>ul>li>a>span{color:#27ae60;}
+
+.newsticker-purple{border-color:#795aac;}
+.newsticker-purple>.newsticker-title{background:#795aac;}
+.newsticker-purple>.newsticker-title>span{border-left-color:#795aac;}
+.newsticker-purple>ul>li>a:hover,.newsticker-purple>ul>li>a>span{color:#795aac;}
+
+.newsticker-turquoise{border-color:#1fb5ad;}
+.newsticker-turquoise>.newsticker-title{background:#1fb5ad;}
+.newsticker-turquoise>.newsticker-title>span{border-left-color:#1fb5ad;}
+.newsticker-turquoise>ul>li>a:hover,.newsticker-turquoise>ul>li>a>span{color:#1fb5ad;}
+
+.newsticker-orange{border-color:#f46e27;}
+.newsticker-orange>.newsticker-title{background:#f46e27;}
+.newsticker-orange>.newsticker-title>span{border-left-color:#f46e27;}
+.newsticker-orange>ul>li>a:hover,.newsticker-orange>ul>li>a>span{color:#f46e27;}
+
+.newsticker-black{border-color:#333;}
+.newsticker-black>.newsticker-title{background:#333;}
+.newsticker-black>.newsticker-title>span{border-left-color:#333;}
+.newsticker-black>ul>li>a:hover,.newsticker-black>ul>li>a>span{color:#333;}
+
+.newsticker-yellow{border-color:#d3ac23;}
+.newsticker-yellow>.newsticker-title{background:#d3ac23;}
+.newsticker-yellow>.newsticker-title>span{border-left-color:#d3ac23;}
+.newsticker-yellow>ul>li>a:hover,.newsticker-yellow>ul>li>a>span{color:#d3ac23;}
+
+.newsticker-light{border-color:#DDD;}
+.newsticker-light>.newsticker-title{background:#DDD;}
+.newsticker-light>.newsticker-title>h2{color:#333;}
+.newsticker-light>.newsticker-title>span{border-left-color:#DDD;}
+.newsticker-light>ul>li>a:hover,.newsticker-light>ul>li>a>span{color:#DDD;}
+
+.newsticker-pink{border-color:#d65aac;}
+.newsticker-pink>.newsticker-title{background:#d65aac;}
+.newsticker-pink>.newsticker-title>span{border-left-color:#d65aac;}
+.newsticker-pink>ul>li>a:hover,.newsticker-pink>ul>li>a>span{color:#d65aac;}
+
+.newsticker-darkred{border-color:#d01e1e;}
+.newsticker-darkred>.newsticker-title{background:#d01e1e;}
+.newsticker-darkred>.newsticker-title>span{border-left-color:#d01e1e;}
+.newsticker-darkred>ul>li>a:hover,.newsticker-darkred>ul>li>a>span{color:#d01e1e;}
+
+.newsticker-bordernone{border:none;}
+.newsticker-italic>ul>li>a{font-style:italic;}
+.newsticker-bold>ul>li>a{font-weight:bold;}
+
+.NewsTicker>.newsticker-navi,
+.NewsTicker>ul>li>a,
+.NewsTicker>.newsticker-navi>span{transition: .25s linear;-moz-transition: .25s linear;-webkit-transition: .25s linear;}
+
+.newsticker-mirror{background-color: black;   font-size: 2em;   }
+.newsticker-mirror>.newsticker-title{background-color:black;}
+.newsticker-mirror>.newsticker-title>h2{color:#FDFDFD;    text-shadow: 0 0 0.1em #00c6ff;}
+.newsticker-mirror>.newsticker-title>span{border-left-color:#FDFDFD;  text-shadow: 0 0 0.1em #00c6ff;}
+.newsticker-mirror>ul>li>a:hover,.newsticker-mirror>ul>li>a>span{color:#FB2728;    text-shadow: 0 0 0.1em #FB2728;}
+.newsticker-mirror>ul>li>a{text-decoration:none; color:#FDFDFD; text-shadow: 0 0 0.1em #00c6ff; overflow:hidden; display:block; white-space: nowrap;text-overflow: ellipsis; font-weight:normal;}

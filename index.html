@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NewsTicker</title>
+<link rel="stylesheet" type="text/css" href="css/newsTicker.css"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script src="js/newsTicker.js"></script>
+</head>
+<style>
+	body{background-color: #323232;}
+	header{width:100%; padding:50px 0; text-align:center; color:#FFFFFF;}
+	header h1{ font-size:48px;}
+</style>
+<body>
+<header>
+	<h1>News Ticker</h1>
+</header>
+
+
+<div style="width:100%; max-width:960px; margin:0 auto; padding:0 20px 50px 20px; box-sizing:border-box;">
+
+   <div class="NewsTicker" id="news1">
+    	<div class="newsticker-title"><h2>NEWS</h2><span></span></div>
+        <ul>
+          	<li><a href="#">Quisque commodo ante nec sollicitudin pretium.</a></li>
+            <li><a href="#">Ut sollicitudin augue posuere tortor fringilla, sit amet vestibulum magna placerat.</a></li>
+            <li><a href="#">Mauris fringilla lacus sit amet erat tincidunt, at malesuada ex consectetur.</a></li>
+            <li><a href="#">Cras iaculis ex nec urna tincidunt, ut ullamcorper dolor egestas.</a></li>
+            <li><a href="#">Maecenas libero ipsum, placerat in mattis vel, tincidunt quis est.</a></li>
+            <li><a href="#">Vivamus tincidunt odio vel neque convallis tincidunt.</a></li>
+        </ul>
+        <div class="newsticker-navi">
+        	<span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+<script>
+	$(window).load(function(e) {
+        $("#news1").NewsTicker({
+			effect		:"slide-vert",
+			autoplay	:true,
+			timer		:3000,
+			color		:"blue"
+		});
+    });
+ </script>
+</body>
+</html>
+
